@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="compositions">Композиции</string>
+    <string name="artists">Исполнители</string>
+    <string name="lists">Списки</string>
+    <string name="genres">Жанры</string>
+    <string name="albums">Альбомы</string>
+    <string name="queue">Очередь</string>
+    <string name="prev">prev</string>
+    <string name="play">play</string>
+    <string name="next">next</string>
+	<string name="pauseBtn">Pause</string>
+    
+</resources>

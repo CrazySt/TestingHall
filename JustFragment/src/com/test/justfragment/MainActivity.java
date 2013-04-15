@@ -3,16 +3,15 @@ package com.test.justfragment;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.view.Menu;
-import android.view.View;
+import android.view.*;
 import android.support.v4.app.FragmentTransaction;
-
+import android.widget.Button;
 public class MainActivity extends FragmentActivity {
 	
-	ListsScreen listsScreen;
-	MyFragment2 myFrag2;
-	MyFragment3 myFrag3;
-	MyFragment4 myFrag4;
+	ListMenu listMenu;
+	PlayBar playBar;
+	Console console;
+	Equalizer equalizer;
 	MyFragment5 myFrag5;
 	FragmentTransaction fTrans;
   @Override
@@ -20,37 +19,33 @@ public class MainActivity extends FragmentActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    listsScreen= new ListsScreen();
-    myFrag2 = new MyFragment2();
-    myFrag3 = new MyFragment3();
-    myFrag4 = new MyFragment4();
+    listMenu= new ListMenu(this);
+    playBar = new PlayBar();
+    console = new Console();
+    equalizer = new Equalizer();
     myFrag5 = new MyFragment5();
-    getSupportFragmentManager().beginTransaction().add(R.id.sec, myFrag2).commit();
-    fTrans = getSupportFragmentManager().beginTransaction();
-    fTrans.add(R.id.cont, listsScreen).commit();
+    getSupportFragmentManager().beginTransaction().add(R.id.sec, playBar).commit();
+    getSupportFragmentManager().beginTransaction().add(R.id.cont, listMenu).commit();
   }
   public void onClick(View view){
 	  fTrans = getSupportFragmentManager().beginTransaction();
 	  switch (view.getId()) {
-	    
-	    case R.id.first_screen:
-	    	fTrans.replace(R.id.cont, listsScreen).commit();
+	    case R.id.listsMenuBtn:
+	    	fTrans.replace(R.id.cont, listMenu).commit();
 	    	break;
 	    case R.id.second_screen:
 	    	fTrans.replace(R.id.cont, myFrag5).commit();
 	    	break;
 	    case R.id.third_screen:
-	    	fTrans.replace(R.id.cont, myFrag3).commit();
+	    	fTrans.replace(R.id.cont, equalizer).commit();
 	    	break;
 	    case R.id.forth_screen:
-	    	fTrans.replace(R.id.cont, myFrag4).commit();
+	    	fTrans.replace(R.id.cont, console).commit();
 	    	break;
 	    default:
 	      break;
 	    }
   }
-  
-  
   
   public boolean onCreateOptionsMenu(Menu menu) {
     getMenuInflater().inflate(R.menu.main, menu);

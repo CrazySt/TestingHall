@@ -14,8 +14,8 @@
  	    android:layout_width="match_parent"
  	    android:layout_height="wrap_content">
  		<Button
- 		    android:id="@+id/first_screen"
- 		    android:layout_width="wrap_content"
+ 		    android:id="@+id/listsMenuBtn"
+ 		    android:layout_width="0dp"
  		    android:layout_height="wrap_content"
  		    android:layout_weight="1"
  		   
@@ -25,7 +25,7 @@
 
  		<Button
  		    android:id="@+id/second_screen"
- 		    android:layout_width="wrap_content"
+ 		    android:layout_width="0dp"
  		    android:layout_height="wrap_content"
  		    android:layout_weight="1"
  		    android:textSize="15sp"
@@ -33,7 +33,7 @@
  		    android:onClick="onClick"/>
  		<Button
  		    android:id="@+id/third_screen"
- 		    android:layout_width="wrap_content"
+ 		    android:layout_width="0dp"
  		    android:layout_height="wrap_content"
  		    android:layout_weight="1"
  		    android:textSize="15sp"
@@ -41,7 +41,7 @@
  		    android:onClick="onClick"/>
  		<Button
  		    android:id="@+id/forth_screen"
- 		    android:layout_width="wrap_content"
+ 		    android:layout_width="0dp"
  		    android:layout_height="wrap_content"
  		    android:layout_weight="1"
  		    android:textSize="15sp"

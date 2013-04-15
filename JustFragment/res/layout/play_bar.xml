@@ -1,0 +1,87 @@
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ android:background="@drawable/play_bar_back_ground_light">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+		<LinearLayout 
+ 	    android:orientation="horizontal"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="fill_parent">
+
+ 		<Button
+ 		    
+ 		    android:layout_width="0dp"
+ 		    android:layout_height="wrap_content"
+ 		    
+ 		    android:layout_marginLeft="0dp"
+ 		    android:layout_marginRight="10dp"
+ 		    android:layout_marginStart="0dp"
+ 		    android:layout_marginTop="0dp"
+ 		    android:layout_weight="1"
+ 		    
+ 		    
+ 		    android:text="@string/queue"
+ 		    android:textSize="10sp" />
+
+ 		<Button
+ 		    android:layout_width="0dp"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_gravity="center_vertical"
+ 		    android:layout_marginBottom="0dp"
+ 		    android:layout_marginLeft="0dp"
+ 		    android:layout_marginRight="0dp"
+ 		    android:layout_marginStart="0dp"
+ 		    android:layout_marginTop="0dp"
+ 		    android:layout_weight="1"
+ 		    android:text="@string/prev"
+ 		    android:textSize="10sp" />
+
+ 		<Button
+ 		    android:id="@+id/playBtn"
+ 		    android:layout_width="0dp"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_gravity="center_vertical"
+ 		    android:layout_marginBottom="0dp"
+ 		    android:layout_marginLeft="0dp"
+ 		    android:layout_marginRight="0dp"
+ 		    android:layout_marginStart="0dp"
+ 		    android:layout_marginTop="0dp"
+ 		    android:layout_weight="1"
+ 		    android:onClick="onClickPlay"
+ 		    android:text="@string/play"
+ 		    android:textSize="10sp" />
+
+<Button
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_weight="1"
+    android:text="@string/next"
+    android:textSize="10sp" />
+
+ 		<Button
+ 		    
+ 		    android:layout_width="0dp"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_marginLeft="10dp"
+ 		    android:layout_marginRight="0dp"
+ 		    android:layout_marginTop="0dp"
+ 		    android:layout_weight="1"
+ 		    android:textSize="10sp" />
+ 		</LinearLayout>
+</LinearLayout>
